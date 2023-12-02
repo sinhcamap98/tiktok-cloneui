@@ -1,4 +1,4 @@
-Sinh new command, địt con mẹ nó
+Sinh new command, địt con mẹ nó, địt cái lồn má nó
 
 # Getting Started with Create React App
 
