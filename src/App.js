@@ -9,6 +9,7 @@ function App() {
     return (
         <Router>
             <div className="App">
+                {/* 
                 <Link to="/">Home Page Link Button</Link>
                 <br></br>
                 <br></br>
@@ -19,7 +20,7 @@ function App() {
                 <br></br>
                 <br></br>
                 <Link to="/upload">Upload Link Button</Link>
-
+                */}
                 <Routes>
                     {publicRoute.map(function (value, index) {
                         // note: if name variable layout, it will not recieve default layout
