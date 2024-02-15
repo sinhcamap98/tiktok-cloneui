@@ -105,3 +105,25 @@
     background: rgba(22, 24, 35, 0.12);
     margin: -3px 0px;
 }
+.search-result {
+    //position: relative;
+    //margin-left: 120px;
+    width: 500px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+    margin-top: -2px;
+    border-radius: 8px;
+    max-height: min(100vh - 156px, 760px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.account {
+    text-align: left;
+    margin: 0px;
+    height: 30px;
+    padding: 5px 12px 0px 12px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
+}
