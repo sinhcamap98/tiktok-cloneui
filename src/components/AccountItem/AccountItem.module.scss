@@ -3,6 +3,9 @@
     padding: 9px 16px;
     cursor: pointer;
     align-items: center;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
 }
 .account-image {
     height: 41px;

@@ -7,9 +7,10 @@ import 'tippy.js/dist/tippy.css'; // optional
 
 import logo from '../../../../assets/images';
 import { faCircleXmark } from '@fortawesome/free-regular-svg-icons';
-import { faSpinner, faMagnifyingGlass, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { faSpinner, faMagnifyingGlass, faCircleCheck, faPlus } from '@fortawesome/free-solid-svg-icons';
 import AccountItem from '../../../AccountItem';
 import { useEffect, useState } from 'react';
+import Button from '../../../Button';
 
 let scm = classNames.bind(styles);
 
@@ -48,37 +49,37 @@ function Header() {
                             <h4 className={scm('account')}>Tài khoản </h4>
                             <AccountItem
                                 accountName="tiger050794"
-                                sinh="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f655d827002d291328098fecadc03b14~c5_300x300.webp?lk3s=a5d48078&x-expires=1708138800&x-signature=aFbNArphzRel92HRhCS3I%2BQ6M5A%3D"
+                                sinh="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f655d827002d291328098fecadc03b14~c5_300x300.webp?lk3s=a5d48078&x-expires=1709625600&x-signature=gbgOXMXy6kTg0S%2FL1QDBLiXw0PI%3D"
                                 alt="Son Tung M-TP image"
                                 accountLable="Son Tung M-TP"
                             />
                             <AccountItem
                                 accountName="sinhphuc98"
-                                sinh="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f655d827002d291328098fecadc03b14~c5_300x300.webp?lk3s=a5d48078&x-expires=1708138800&x-signature=aFbNArphzRel92HRhCS3I%2BQ6M5A%3D"
+                                sinh="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f655d827002d291328098fecadc03b14~c5_300x300.webp?lk3s=a5d48078&x-expires=1709625600&x-signature=gbgOXMXy6kTg0S%2FL1QDBLiXw0PI%3D"
                                 alt="Phuc Sinh image"
                                 accountLable="Phúc Sinh"
                             />
                             <AccountItem
                                 accountName="taylorswift"
-                                sinh="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f655d827002d291328098fecadc03b14~c5_300x300.webp?lk3s=a5d48078&x-expires=1708138800&x-signature=aFbNArphzRel92HRhCS3I%2BQ6M5A%3D"
+                                sinh="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f655d827002d291328098fecadc03b14~c5_300x300.webp?lk3s=a5d48078&x-expires=1709625600&x-signature=gbgOXMXy6kTg0S%2FL1QDBLiXw0PI%3D"
                                 alt="Taylor Swift image"
                                 accountLable="Taylor Swift"
                             />
                             <AccountItem
                                 accountName="coldplay"
-                                sinh="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f655d827002d291328098fecadc03b14~c5_300x300.webp?lk3s=a5d48078&x-expires=1708138800&x-signature=aFbNArphzRel92HRhCS3I%2BQ6M5A%3D"
+                                sinh="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f655d827002d291328098fecadc03b14~c5_300x300.webp?lk3s=a5d48078&x-expires=1709625600&x-signature=gbgOXMXy6kTg0S%2FL1QDBLiXw0PI%3D"
                                 alt="coldplay image"
                                 accountLable="coldplay"
                             />
                             <AccountItem
                                 accountName="messi"
-                                sinh="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f655d827002d291328098fecadc03b14~c5_300x300.webp?lk3s=a5d48078&x-expires=1708138800&x-signature=aFbNArphzRel92HRhCS3I%2BQ6M5A%3D"
+                                sinh="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f655d827002d291328098fecadc03b14~c5_300x300.webp?lk3s=a5d48078&x-expires=1709625600&x-signature=gbgOXMXy6kTg0S%2FL1QDBLiXw0PI%3D"
                                 alt="Lionel Messi image"
                                 accountLable="Lionel Messi"
                             />
                             <AccountItem
                                 accountName="cristianoronaldo"
-                                sinh="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f655d827002d291328098fecadc03b14~c5_300x300.webp?lk3s=a5d48078&x-expires=1708138800&x-signature=aFbNArphzRel92HRhCS3I%2BQ6M5A%3D"
+                                sinh="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f655d827002d291328098fecadc03b14~c5_300x300.webp?lk3s=a5d48078&x-expires=1709625600&x-signature=gbgOXMXy6kTg0S%2FL1QDBLiXw0PI%3D"
                                 alt="Cristiano Ronaldo image"
                                 accountLable="Cristiano Ronaldo"
                             />
@@ -102,7 +103,28 @@ function Header() {
                     </div>
                 </Tippy>
 
-                <div>Login</div>
+                <div className={scm('header-right-container')}>
+                    {/* muốn module hoá thì phải có cx + đã có CSS của class đó trong CSS sheet
+                    Ex: 
+                    <Button upload sinhTestClass={scm('sinhTestClassCss')}>
+                        Tải lên
+                    </Button>
+                    <Button upload icon={<FontAwesomeIcon icon={faPlus} />}>
+                        Tải lên
+                    </Button>
+                    */}
+                    <Button upload icon={<FontAwesomeIcon icon={faPlus} />}>
+                        Tải lên
+                    </Button>
+                    <Button primary to="/upload" target="_blank">
+                        Đăng nhập
+                    </Button>
+                    {/*<Button follow>Follow</Button>
+                    <Button loginsidebar follow>}
+                        Đăng nhập
+                    </Button>
+                    <Button dowloadApp>Tải ứng dụng</Button>*/}
+                </div>
             </div>
         </header>
     );
