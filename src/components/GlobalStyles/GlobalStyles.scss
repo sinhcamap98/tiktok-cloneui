@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary: rgb(254, 44, 85);
+    --yellow: #ffd700;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+body {
+    font-family: 'Noto Serif', serif;
+    //font-optical-sizing: auto;
+    //font-weight: 100;
+    //font-style: normal;
+    //font-variation-settings: 'wdth' 100;
+
+    //font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}

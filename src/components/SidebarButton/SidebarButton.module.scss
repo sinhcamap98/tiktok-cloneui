@@ -1,0 +1,25 @@
+.side-bar-button {
+    display: flex;
+    align-items: center;
+    width: 224px;
+    height: 48px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-align: left;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+    &:visited {
+        color: rgb(254, 44, 85);
+    }
+}
+.side-bar-item-icon {
+    font-size: 22px;
+    padding: 8px;
+}
+.side-bar-button-text {
+    margin-left: 8px;
+    font-size: 18px;
+    font-weight: 800;
+}

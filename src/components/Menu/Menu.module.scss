@@ -1,0 +1,48 @@
+.menu {
+    width: 276px;
+    height: 206px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+    margin-top: -2px;
+    border-radius: 8px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    line-height: 21px;
+    padding: 8px 0px;
+}
+.menu {
+    + .menu {
+        margin-left: 0px;
+    }
+}
+.language {
+    height: 11px;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-left: 71px;
+    font-size: 16px;
+    padding: 8px 0px 8px 0px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.language-back-icon {
+    width: 48px;
+    height: 24.5px;
+    background: none;
+    margin-left: 8px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.back-icon {
+    font-weight: 500;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    position: relative;
+    left: -70px;
+    &:hover {
+        cursor: pointer;
+    }
+}

@@ -7,7 +7,7 @@
 }
 .inner {
     height: 100%;
-    width: 1392px;
+    //width: 1392px;
     padding-right: 24px;
     padding-left: 16px;
     display: flex;
@@ -15,89 +15,7 @@
     align-items: center;
 }
 
-.search-bar {
-    position: relative;
-    width: 468px;
-    height: 22px;
-    padding: 12px 16px;
-    background: rgba(22, 24, 35, 0.06);
-    border-radius: 92px;
-    display: flex;
-    //input:focus-within {
-    &:focus-within {
-        //&:focus {
-        border: 1px solid rgba(22, 24, 35, 0.2);
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        top: 9px;
-        right: 50px;
-        width: 1px;
-        height: 28px;
-        background: rgba(22, 24, 35, 0.12);
-    }
-}
-
-.input-search {
-    flex: 1;
-    border: none;
-    font-size: 16px;
-    background: transparent;
-    outline: none;
-    caret-color: rgb(254, 44, 85);
-    padding: 0px;
-    width: 431px;
-    height: 21px;
-    color: rgb(22, 24, 35);
-    &:hover ~ .search-btn {
-        background: rgba(22, 24, 35, 0.06);
-        color: rgba(22, 24, 35);
-        border-top-right-radius: 23px;
-        border-bottom-right-radius: 23px;
-    }
-    /*&:hover ~ .search-bar {
-        //border: 1px solid rgba(22, 24, 35, 0.2);
-        background-color: red;
-    }*/
-}
-.loading-icon {
-    position: absolute;
-    top: 13.5px;
-    right: 66px;
-    border: none;
-    font-size: 14.67px;
-}
 //.loading-icon,
-.clear-btn {
-    position: absolute;
-    top: 12px;
-    right: 60px;
-    border: none;
-    font-size: 14.67px;
-}
-.search-btn {
-    background: transparent;
-    font-size: 19px;
-    border: none;
-    padding: 11px 16px 11px 12px;
-    margin: -12px -16px -12px 0px;
-    // in case trên web, attribite là fill, thì xuống code thay bằng color
-    //fill: rgba(22, 24, 35, 0.34);
-    color: rgba(22, 24, 35, 0.34);
-    &:hover {
-        cursor: pointer;
-        background: rgba(22, 24, 35, 0.06);
-        border-top-right-radius: 23px;
-        border-bottom-right-radius: 23px;
-        color: rgba(22, 24, 35);
-    }
-    //active means when we click to element, css will run
-    &:active {
-        //background-color: rgba(12, 20, 35, 1);
-        background-color: red;
-    }
-}
 
 .search-bar-border {
     width: 1px;
@@ -105,10 +23,21 @@
     background: rgba(22, 24, 35, 0.12);
     margin: -3px 0px;
 }
-.search-result {
-    //position: relative;
-    //margin-left: 120px;
-    width: 500px;
+
+.header-right-container {
+    display: flex;
+}
+.sinhTestClassCss {
+    background: blue;
+}
+.header-right-menu-icon {
+    margin-left: 16px;
+    //padding: 0px 4px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.header-right-menu {
+    width: 269px;
     background: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
     margin-top: -2px;
@@ -117,19 +46,24 @@
     overflow-x: hidden;
     overflow-y: auto;
 }
-.account {
-    text-align: left;
-    margin: 0px;
-    height: 30px;
-    padding: 5px 12px 0px 12px;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 600;
-    color: rgba(22, 24, 35, 0.5);
+.header-right-menu-message {
+    width: 22px;
+    height: 22px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 24px;
 }
-.header-right-container {
-    display: flex;
+.header-right-menu-inbox {
+    width: 22px;
+    height: 22px;
+    margin-left: 24px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
-.sinhTestClassCss {
-    background: blue;
+.header-right-avatar-login {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 24px;
+    margin-top: 4px;
 }

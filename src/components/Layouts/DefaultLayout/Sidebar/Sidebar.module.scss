@@ -2,5 +2,80 @@
     width: 224px;
     min-height: 100%;
     padding: 20px 0px 26px 8px;
-    //background-color: chartreuse;
+}
+.side-bar-item {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.sidebar-left-avatar-login {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+.side-bar-suggested {
+    font-size: 14px;
+    color: rgba(22, 24, 35, 0.75);
+    padding: 0px 8px;
+    padding-top: 16px;
+    font-weight: 600;
+}
+.side-bar-acccount-item {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 8px;
+        right: 8px;
+        top: 0px;
+        height: 1px;
+        background: rgba(22, 24, 35, 0.12);
+    }
+}
+.side-bar-see-more {
+    color: rgb(254, 44, 85);
+    font-size: 14px;
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.side-bar-tiktok-info {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: 5px;
+        right: 8px;
+        height: 1px;
+        background: rgba(22, 24, 35, 0.12);
+    }
+}
+.side-bar-tiktok-company {
+    font-size: 14px;
+    color: rgba(22, 24, 35, 0.5);
+    cursor: pointer;
+    font-weight: 800;
+}
+.side-bar-tiktok-company-info {
+    padding-top: 18px;
+    font-size: 14px;
+    color: rgba(22, 24, 35, 0.5);
+    cursor: pointer;
+    font-weight: 800;
+}
+.side-bar-tiktok-company-info-more {
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
+    cursor: pointer;
+}
+.side-bar-tiktok-company-info-copy-right {
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 12px;
+    font-weight: 600;
 }

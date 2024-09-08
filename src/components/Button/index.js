@@ -22,10 +22,13 @@ function Button({
     loginsidebar,
     sencond,
     primary,
+    menuLogin,
+    onClick,
     ...leftPara
 }) {
     let Comp = 'button';
     const prop = {
+        onClick,
         ...leftPara,
     };
     if (to) {
@@ -48,6 +51,7 @@ function Button({
         follow,
         loginsidebar,
         upload,
+        menuLogin,
     });
     return (
         //<div>
