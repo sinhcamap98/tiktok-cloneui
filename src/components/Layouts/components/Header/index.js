@@ -128,7 +128,7 @@ function Header() {
                         {logIn ? (
                             <div>
                                 <img
-                                    src="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f655d827002d291328098fecadc03b14~c5_720x720.jpeg?lk3s=a5d48078&nonce=51799&refresh_token=ec9daaee057a7e266c3f8941dca2402e&x-expires=1725706800&x-signature=djfDbbmKHnXVKJ1sUOOPK77cxk8%3D&shp=a5d48078&shcp=81f88b70"
+                                    src="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/f655d827002d291328098fecadc03b14~c5_720x720.jpeg?lk3s=a5d48078&nonce=17935&refresh_token=001d57e12fe575496a88ace73cb9958c&x-expires=1726570800&x-signature=%2B9h2flrYbG61tuGA7%2FBE%2FkVPczM%3D&shp=a5d48078&shcp=81f88b70"
                                     alt="avatar-login"
                                     className={scm('header-right-avatar-login')}
                                 />
